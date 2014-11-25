@@ -1,0 +1,58 @@
+{
+  "Stage 1":  {
+                "00:00 to 02:30": { "Monday":0, "Tuesday":0, "Wednesday":0, "Thursday":0, "Friday":0, "Saturday":0, "Sunday":0},
+                "02:00 to 04:30": { "Monday":0, "Tuesday":0, "Wednesday":0, "Thursday":0, "Friday":0, "Saturday":0, "Sunday":0},
+                "04:00 to 06:30": { "Monday":0, "Tuesday":0, "Wednesday":0, "Thursday":0, "Friday":0, "Saturday":0, "Sunday":0},
+                "06:00 to 08:30": { "Monday":1, "Tuesday":9, "Wednesday":6, "Thursday":14, "Friday":3, "Saturday":11, "Sunday":11},
+                "08:00 to 10:30": { "Monday":2, "Tuesday":10, "Wednesday":7, "Thursday":15, "Friday":4, "Saturday":12, "Sunday":12},
+                "10:00 to 12:30": { "Monday":3, "Tuesday":11, "Wednesday":8, "Thursday":16, "Friday":5, "Saturday":13, "Sunday":13},
+                "12:00 to 14:30": { "Monday":4, "Tuesday":12, "Wednesday":1, "Thursday":9, "Friday":6, "Saturday":14, "Sunday":14},
+                "14:00 to 16:30": { "Monday":5, "Tuesday":13, "Wednesday":2, "Thursday":10, "Friday":7, "Saturday":15, "Sunday":15},
+                "16:00 to 18:30": { "Monday":6, "Tuesday":14, "Wednesday":3, "Thursday":11, "Friday":8, "Saturday":16, "Sunday":16},
+                "18:00 to 20:30": { "Monday":7, "Tuesday":15, "Wednesday":4, "Thursday":12, "Friday":1, "Saturday":9, "Sunday":9},
+                "20:00 to 22:30": { "Monday":8, "Tuesday":16, "Wednesday":5, "Thursday":13, "Friday":2, "Saturday":10, "Sunday":10},
+                "22:00 to 24:30": { "Monday":0, "Tuesday":0, "Wednesday":0, "Thursday":0, "Friday":0, "Saturday":0, "Sunday":0}
+              },
+  "Stage 2":  {
+                "00:00 to 02:30": { "Monday":"", "Tuesday":"", "Wednesday":"", "Thursday":"", "Friday":"", "Saturday":"", "Sunday":""},
+                "02:00 to 04:30": { "Monday":"", "Tuesday":"", "Wednesday":"", "Thursday":"", "Friday":"", "Saturday":"", "Sunday":""},
+                "04:00 to 06:30": { "Monday":"", "Tuesday":"", "Wednesday":"", "Thursday":"", "Friday":"", "Saturday":"", "Sunday":""},
+                "06:00 to 08:30": { "Monday":"1, 16", "Tuesday":"9, 6", "Wednesday":"6, 14", "Thursday":"14, 3", "Friday":"3, 11", "Saturday":"11, 1", "Sunday":"11, 1"},
+                "08:00 to 10:30": { "Monday":"2, 10", "Tuesday":"10, 7", "Wednesday":"7, 15", "Thursday":"15, 4", "Friday":"4, 12", "Saturday":"12, 2", "Sunday":"12, 2"},
+                "10:00 to 12:30": { "Monday":"3, 11", "Tuesday":"11, 8", "Wednesday":"8, 16", "Thursday":"16, 5", "Friday":"5, 13", "Saturday":"13, 3", "Sunday":"13, 3"},
+                "12:00 to 14:30": { "Monday":"4, 12", "Tuesday":"12, 1", "Wednesday":"1, 9", "Thursday":"9, 6", "Friday":"6, 14", "Saturday":"14, 4", "Sunday":"14, 4"},
+                "14:00 to 16:30": { "Monday":"5, 13", "Tuesday":"13, 2", "Wednesday":"2, 10", "Thursday":"10, 7", "Friday":"7, 15", "Saturday":"15, 5", "Sunday":"15, 5"},
+                "16:00 to 18:30": { "Monday":"6, 14", "Tuesday":"14, 3", "Wednesday":"3, 11", "Thursday":"11, 8", "Friday":"8, 16", "Saturday":"16, 6", "Sunday":"16, 6"},
+                "18:00 to 20:30": { "Monday":"7, 15", "Tuesday":"15, 4", "Wednesday":"4, 12", "Thursday":"12, 1", "Friday":"1, 9", "Saturday":"9, 7", "Sunday":"9, 7"},
+                "20:00 to 22:30": { "Monday":"8, 9", "Tuesday":"16, 5", "Wednesday":"5, 13", "Thursday":"13, 2", "Friday":"2, 10", "Saturday":"10, 8", "Sunday":"10, 8"},
+                "22:00 to 24:30": { "Monday":"", "Tuesday":"", "Wednesday":"", "Thursday":"", "Friday":"", "Saturday":"", "Sunday":""}
+              },
+  "Stage 3A": {
+                "00:00 to 02:30": { "Monday":"9, 1", "Tuesday":"2, 15", "Wednesday":"13, 7", "Thursday":"7, 10", "Friday":"7, 4", "Saturday":"7, 14", "Sunday":"7, 14"},
+                "02:00 to 04:30": { "Monday":"10, 2", "Tuesday":"3, 16", "Wednesday":"14, 8", "Thursday":"8, 11", "Friday":"8, 1", "Saturday":"8, 15", "Sunday":"8, 15"},
+                "04:00 to 06:30": { "Monday":"11, 3", "Tuesday":"4, 13", "Wednesday":"15, 5", "Thursday":"5, 12", "Friday":"5, 2", "Saturday":"5, 16", "Sunday":"5, 16"},
+                "06:00 to 08:30": { "Monday":"1, 16, 6", "Tuesday":"9, 6, 14", "Wednesday":"6, 14, 3", "Thursday":"14, 3, 11", "Friday":"3, 11, 8", "Saturday":"11, 1, 9", "Sunday":"11, 1, 9"},
+                "08:00 to 10:30": { "Monday":"2, 10, 7", "Tuesday":"10, 7, 15", "Wednesday":"7, 15, 4", "Thursday":"15, 4, 12", "Friday":"4, 12, 1", "Saturday":"12, 2, 10", "Sunday":"12, 2, 10"},
+                "10:00 to 12:30": { "Monday":"3, 11, 8", "Tuesday":"11, 8, 16", "Wednesday":"8, 16, 5", "Thursday":"16, 5, 13", "Friday":"5, 13, 2", "Saturday":"13, 3, 11", "Sunday":"13, 3, 11"},
+                "12:00 to 14:30": { "Monday":"4, 12, 1", "Tuesday":"12, 1, 9", "Wednesday":"1, 9, 6", "Thursday":"9, 6, 16", "Friday":"6, 14, 3", "Saturday":"14, 4, 12", "Sunday":"14, 4, 12"},
+                "14:00 to 16:30": { "Monday":"5, 13, 2", "Tuesday":"13, 2, 10", "Wednesday":"2, 10, 7", "Thursday":"10, 7, 15", "Friday":"7, 15, 4", "Saturday":"15, 5, 13", "Sunday":"15, 5, 13"},
+                "16:00 to 18:30": { "Monday":"6, 14, 3", "Tuesday":"14, 3, 11", "Wednesday":"3, 11, 8", "Thursday":"11, 8, 14", "Friday":"8, 16, 5", "Saturday":"16, 6, 14", "Sunday":"16, 6, 14"},
+                "18:00 to 20:30": { "Monday":"7, 15, 4", "Tuesday":"15, 4, 12", "Wednesday":"4, 12, 1", "Thursday":"12, 1, 9", "Friday":"1, 9, 6", "Saturday":"9, 7, 15", "Sunday":"9, 7, 15"},
+                "20:00 to 22:30": { "Monday":"8, 9, 5", "Tuesday":"16, 5, 13", "Wednesday":"5, 13, 2", "Thursday":"13, 2, 10", "Friday":"2, 10, 7", "Saturday":"10, 8, 16", "Sunday":"10, 8, 16"},
+                "22:00 to 24:30": { "Monday":"12, 4", "Tuesday":"1, 14", "Wednesday":"16, 6", "Thursday":"6, 9", "Friday":"6, 3", "Saturday":"6, 13", "Sunday":"6, 13"}
+              },
+  "Stage 3B": {
+                "00:00 to 02:30": { "Monday":"9, 1, 15, 7", "Tuesday":"2, 15, 7, 9", "Wednesday":"13, 7, 10, 2", "Thursday":"7, 10, 4, 13", "Friday":"7, 4, 14, 10", "Saturday":"7, 14, 1, 12", "Sunday":"7, 14, 1, 12"},
+                "02:00 to 04:30": { "Monday":"10, 2, 16, 8", "Tuesday":"3, 16, 8, 10", "Wednesday":"14, 8, 11, 3", "Thursday":"8, 11, 1, 14", "Friday":"8, 1, 15, 11", "Saturday":"8, 15, 2, 9", "Sunday":"8, 15, 2, 9"},
+                "04:00 to 06:30": { "Monday":"11, 3, 13, 5", "Tuesday":"4, 13, 5, 11", "Wednesday":"15, 5, 12, 4", "Thursday":"5, 12, 2, 15", "Friday":"5, 2, 16, 12", "Saturday":"5, 16, 3, 10", "Sunday":"5, 16, 3, 10"},
+                "06:00 to 08:30": { "Monday":"1, 16, 6, 14", "Tuesday":"9, 6, 14, 3", "Wednesday":"6, 14, 3, 11", "Thursday":"14, 3, 11, 8", "Friday":"3, 11, 8, 9", "Saturday":"11, 1, 9, 6", "Sunday":"11, 1, 9, 6"},
+                "08:00 to 10:30": { "Monday":"2, 10, 7, 15", "Tuesday":"10, 7, 15, 4", "Wednesday":"7, 15, 4, 12", "Thursday":"15, 4, 12, 1", "Friday":"4, 12, 1, 10", "Saturday":"12, 2, 10, 7", "Sunday":"12, 2, 10, 7"},
+                "10:00 to 12:30": { "Monday":"3, 11, 8, 16", "Tuesday":"11, 8, 16, 5", "Wednesday":"8, 16, 5, 13", "Thursday":"16, 5, 13, 2", "Friday":"5, 13, 2, 11", "Saturday":"13, 3, 11, 8", "Sunday":"13, 3, 11, 8"},
+                "12:00 to 14:30": { "Monday":"4, 12, 1, 9", "Tuesday":"12, 1, 9, 6", "Wednesday":"1, 9, 6, 14", "Thursday":"9, 6, 16, 3", "Friday":"6, 14, 3, 12", "Saturday":"14, 4, 12, 1", "Sunday":"14, 4, 12, 1"},
+                "14:00 to 16:30": { "Monday":"5, 13, 2, 10", "Tuesday":"13, 2, 10, 7", "Wednesday":"2, 10, 7, 15", "Thursday":"10, 7, 15, 5", "Friday":"7, 15, 4, 13", "Saturday":"15, 5, 13, 2", "Sunday":"15, 5, 13, 2"},
+                "16:00 to 18:30": { "Monday":"6, 14, 3, 11", "Tuesday":"14, 3, 11, 8", "Wednesday":"3, 11, 8, 16", "Thursday":"11, 8, 14, 4", "Friday":"8, 16, 5, 14", "Saturday":"16, 6, 14, 3", "Sunday":"16, 6, 14, 3"},
+                "18:00 to 20:30": { "Monday":"7, 15, 4, 12", "Tuesday":"15, 4, 12, 1", "Wednesday":"4, 12, 1, 9", "Thursday":"12, 1, 9, 6", "Friday":"1, 9, 6, 15", "Saturday":"9, 7, 15, 4", "Sunday":"9, 7, 15, 4"},
+                "20:00 to 22:30": { "Monday":"8, 9, 5, 13", "Tuesday":"16, 5, 13, 2", "Wednesday":"5, 13, 2, 10", "Thursday":"13, 2, 10, 7", "Friday":"2, 10, 7, 16", "Saturday":"10, 8, 16, 5", "Sunday":"10, 8, 16, 5"},
+                "22:00 to 24:30": { "Monday":"12, 4, 14, 6", "Tuesday":"1, 14, 6, 12", "Wednesday":"16, 6, 9, 1", "Thursday":"6, 9, 3, 16", "Friday":"6, 3, 13, 9", "Saturday":"6, 13, 4, 11", "Sunday":"6, 13, 4, 11"}
+              }
+}
