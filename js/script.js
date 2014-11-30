@@ -35,10 +35,9 @@ $(document).ready(function() {
           timeEnd = timeStart.clone().add({hours:2,minutes:30});
           if (zoneList.indexOf(zone)>-1){
             var stageIndex = stages.indexOf(stage);
-            if (stageIndex>0){
+            if (stageIndex>0){ //TODO: perhaps we should find a better way to handle the data here.
               var prevStageZoneList = jsonData[stages[stageIndex-1]][timeInterval][day];
               var alreadyLoadShedding = prevStageZoneList.indexOf(zone)>-1;
-              //~ console.log(alreadyLoadShedding, prevStageZoneList);
               if(!alreadyLoadShedding){
                 calendarEvents.push({
                                       title  : stage,
@@ -48,6 +47,14 @@ $(document).ready(function() {
                                       editable: false
                                     });
               }
+            }else{
+              calendarEvents.push({
+                                      title  : stage,
+                                      start  : timeStart,
+                                      end  : timeEnd,
+                                      allDay : false,
+                                      editable: false
+                                    });
             }
           }
         });
@@ -55,18 +62,17 @@ $(document).ready(function() {
     });
   }
   
-  
-  
-  
   select = new ol.interaction.Select({ condition: ol.events.condition.click });
-  select.getFeatures().on('add', function(e, a, b) { zoneArray = e.target.a; $(zoneArray).each(function(i, item){console.log(item.p.name); 
+  select.getFeatures().on('add', function(e, a, b) { 
+    zoneArray = e.target.a; 
+    $(zoneArray).each(function(i, item){
     
-    calendar.fullCalendar( 'removeEvents' );
-    newCalendarEvents=[]
-    update(item.p.name, newCalendarEvents)});
-    calendar.fullCalendar('addEventSource', newCalendarEvents);
+      calendar.fullCalendar( 'removeEvents' );
+      newCalendarEvents=[]
+      update(item.p.name, newCalendarEvents)});
+      calendar.fullCalendar('addEventSource', newCalendarEvents);
     
-     });
+  });
   map.addInteraction(select);
   //CALENDAR
   var calendar = $('#calendar').fullCalendar({
@@ -87,10 +93,6 @@ $(document).ready(function() {
   var jsonData;
   jsonTable = $.getJSON("capetown_tables_json_2.json", function(json) {
     jsonData = json;
-    update("15", calendarEvents);
-    console.log(calendarEvents);
-    calendar.fullCalendar( 'removeEvents' );
-    calendar.fullCalendar('addEventSource', calendarEvents );
   });
 });
 
