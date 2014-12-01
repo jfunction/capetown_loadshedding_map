@@ -1,7 +1,15 @@
 var calendarEvents = [];
 moment.locale('en', {week : { dow : 1 }}) // Monday is the 1st, not Sunday
 var select;
+var jsonData;
 $(document).ready(function() {
+  //~ //Some styling stuff
+  //~ var resizeMapToFitCalendar = function(){
+    //~ var canvasheight=$('.fc-view > table:nth-child(1)').css('height');
+    //~ $('#map').css("height", canvasheight);
+  //~ }
+  //~ $(window).resize(resizeMapToFitCalendar);
+  //~ setTimeout(resizeMapToFitCalendar, 4000);
   //MAP
   var map = new ol.Map({
     target: 'map',
@@ -63,15 +71,14 @@ $(document).ready(function() {
   }
   
   select = new ol.interaction.Select({ condition: ol.events.condition.click });
-  select.getFeatures().on('add', function(e, a, b) { 
+  select.getFeatures().on('add', function(e, a, b) {
     zoneArray = e.target.a; 
+    calendar.fullCalendar( 'removeEvents' );
+    newCalendarEvents=[]
     $(zoneArray).each(function(i, item){
-    
-      calendar.fullCalendar( 'removeEvents' );
-      newCalendarEvents=[]
-      update(item.p.name, newCalendarEvents)});
-      calendar.fullCalendar('addEventSource', newCalendarEvents);
-    
+      update(item.p.name, newCalendarEvents)
+    });
+    calendar.fullCalendar('addEventSource', newCalendarEvents);
   });
   map.addInteraction(select);
   //CALENDAR
@@ -84,13 +91,10 @@ $(document).ready(function() {
     header: false
   });
   
-  var dow = moment().zone('+0200').weekday();
-  if (dow==0) dow=7;
-  var today = moment('2014-12-0'+dow).day(dow);//strange hack.
-  console.log(today)
+  var dow = moment().zone('+0200').weekday()+1;
+  var today = moment('2014-12-0'+dow).day(dow);//strange hack. Turns out 2014-12-01 is Monday.
   calendar.fullCalendar( 'gotoDate', today );
   //LOADSHEDDING JSON DATA
-  var jsonData;
   jsonTable = $.getJSON("capetown_tables_json_2.json", function(json) {
     jsonData = json;
   });
