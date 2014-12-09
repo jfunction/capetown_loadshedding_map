@@ -48,7 +48,7 @@ $(document).ready(function() {
               var alreadyLoadShedding = prevStageZoneList.indexOf(zone)>-1;
               if(!alreadyLoadShedding){
                 calendarEvents.push({
-                                      title  : stage,
+                                      title  : stage+" or higher will experience loadshedding.",
                                       start  : timeStart,
                                       end  : timeEnd,
                                       allDay : false,
@@ -57,7 +57,7 @@ $(document).ready(function() {
               }
             }else{
               calendarEvents.push({
-                                      title  : stage,
+                                      title  : stage+" or higher will experience loadshedding.",
                                       start  : timeStart,
                                       end  : timeEnd,
                                       allDay : false,
